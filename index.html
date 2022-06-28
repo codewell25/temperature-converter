@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <style>
+        body {
+            background-image: url(img/background.jpeg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        main {
+            width: 28%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .input-area {
+            width: 100%;
+        }
+
+        .input-area input {
+            height: 55px;
+            width: 100%;
+            padding-left: 10px;
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px
+        }
+
+        ::placeholder {
+            font-size: 18px;
+        }
+
+        .heading {
+            color: white;
+            letter-spacing: 10px;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+
+        }
+
+        @media(max-width:600px) {
+            main {
+                width: 88%;
+
+
+            }
+
+            .heading {
+                font-size: 30px;
+
+            }
+        }
+
+        @media(min-width:601px) and (max-width:1020px) {
+            main {
+                width: 60%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="wrapper">
+            <h1 class="heading">TEMPERATURE <br> CONVERTER</h1>
+
+            <div class="input-area">
+
+                <p>
+                    <input type="number" id="celcius-input" placeholder="CELCIUS">
+                </p>
+
+                <p>
+                    <input type="number" id="fahrenheit-input" placeholder="FAHRENHEIT">
+                </p>
+
+                <p>
+                    <input type="number" id="kelvin-input" placeholder="KELVIN">
+                </p>
+
+            </div>
+        </div>
+
+    </main>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
